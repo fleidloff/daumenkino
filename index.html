@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>&lt;x-gif&gt;</title>
+<script src="jquery.js"></script>
+<script src="hammer.js"></script>
+<script src="app.js"></script>
+<link href="style.css" rel="stylesheet">
+  <script>
+    if ('registerElement' in document
+      && 'createShadowRoot' in HTMLElement.prototype
+      && 'import' in document.createElement('link')
+      && 'content' in document.createElement('template')) {
+      // We're using a browser with native WC support!
+    } else {
+      document.write('<script src="x-gif/platform.js"><\/script>')
+    }
+  </script>
+  <link rel="import" href="x-gif/x-gif.html">
+  
+</head>
+<body>
+    <div class="daumenkino" id="daumenkino">
+        <x-gif src="http://i.kinja-img.com/gawker-media/image/upload/s--YdSSX6rO--/c_fit,fl_progressive,q_80,w_320/qeckbnkprtjh1zzolmde.gif" stopped fill></x-gif>
+        <div class="front" id="daumenkinoFront"></div>
+    </div>
+</body>
+</html>
